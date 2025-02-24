@@ -1,0 +1,91 @@
+:root {
+  --color-primary: #24406b;   
+  --color-secondary: #1c2e4a;
+  --color-background: #f3f4f6;
+  --color-white: #ffffff;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.cadastrosContainer {
+  padding: 40px;
+  background-color: var(--color-background);
+  min-height: 100vh;
+}
+
+.cadastrosTitle {
+  text-align: center;
+  font-size: 32px;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.cadastroCard {
+  background-color: var(--color-white);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px var(--color-shadow);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-left 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.cadastroCard:hover,
+.cadastroCard:focus {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-left: 4px solid var(--color-primary);
+  outline: none;
+}
+
+.cardIcon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-secondary);
+}
+
+.voltarButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.voltarButton:hover {
+  background-color: var(--color-primary);
+}
+
+.voltarButton:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 480px) {
+  .cardsContainer {
+    grid-template-columns: 1fr;
+  }
+  .cadastroCard {
+    padding: 15px;
+  }
+  .cardIcon {
+    font-size: 32px;
+  }
+  .cardTitle {
+    font-size: 16px;
+  }
+}
