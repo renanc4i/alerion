@@ -1,6 +1,6 @@
 :root {
-  --color-primary: #24406b;       /* Azul escuro */
-  --color-secondary: #1c2e4a;    /* Azul mais escuro */
+  --color-primary-menu: #24406b;       /* Azul escuro */
+  --color-secondary-menu: #213658;    /* Azul mais escuro */
   --color-text: white;           /* Texto branco */
   --color-background: #f3f4f6;   /* Fundo cinza claro */
   --color-shadow: rgba(0, 0, 0, 0.1); /* Sombra */
@@ -26,7 +26,7 @@ body {
   left: 0;
   height: 100%;
   width: 250px;
-  background: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
+  background: linear-gradient(to bottom, var(--color-primary-menu), var(--color-secondary-menu));
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   box-shadow: 0 4px 10px var(--color-shadow);
@@ -111,7 +111,7 @@ body {
 
 h1 {
   font-size: 28px;
-  color: var(--color-primary);
+  color: var(--color-primary-menu);
 }
 
 @media (max-width: 768px) {

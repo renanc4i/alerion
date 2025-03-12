@@ -1,0 +1,267 @@
+.modal-detalhes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.fechar-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #666;
+}
+
+.modal-content h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.detalhes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.detalhe-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.detalhe-item strong {
+    color: #666;
+    font-size: 14px;
+}
+
+.detalhe-item span {
+    font-size: 16px;
+}
+
+.acoes-detalhes {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.btn-editar, .btn-excluir {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.btn-editar {
+    background-color: #0066cc;
+    color: white;
+}
+
+.btn-excluir {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Seção de Fotos */
+.secao-fotos {
+    margin-bottom: 30px;
+}
+
+.secao-fotos h4 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.upload-area {
+    margin-bottom: 20px;
+}
+
+.btn-upload {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: #f8f9fa;
+    border: 1px dashed #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-upload:hover {
+    background-color: #e9ecef;
+}
+
+.galeria-fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.foto-item {
+    position: relative;
+    aspect-ratio: 1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.foto-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-remover-foto {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(220, 53, 69, 0.9);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-remover-foto:hover {
+    background-color: #dc3545;
+}
+
+/* Seção de Histórico */
+.secao-historico {
+    margin-top: 30px;
+}
+
+.secao-historico h4 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.historico-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.historico-item {
+    display: grid;
+    grid-template-columns: 200px 150px 1fr;
+    gap: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.historico-data {
+    color: #666;
+}
+
+.historico-usuario {
+    font-weight: 500;
+}
+
+.historico-acao {
+    color: #333;
+}
+
+/* Status e Prazo */
+.status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.status.concluido {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status.pendente {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status.atrasado {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.prazo {
+    font-weight: 500;
+}
+
+.prazo.vencido {
+    color: #dc3545;
+}
+
+.prazo.critico {
+    color: #ffc107;
+}
+
+.prazo.proximo {
+    color: #28a745;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .detalhes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .historico-item {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .galeria-fotos {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-content {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .acoes-detalhes {
+        flex-direction: column;
+    }
+
+    .btn-editar, .btn-excluir {
+        width: 100%;
+        justify-content: center;
+    }
+} 
