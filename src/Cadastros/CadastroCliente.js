@@ -84,7 +84,7 @@ function CadastroCliente({ onVoltar }) {
   const [editingIndex, setEditingIndex] = useState(null);
   const [selectedCliente, setSelectedCliente] = useState(null);
 
-  // Agora os filtros aparecem por padrão (estado inicial true)
+  
   const [showFiltros, setShowFiltros] = useState(false);
   const [filters, setFilters] = useState({
     nome: '',
