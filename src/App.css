@@ -1,10 +1,20 @@
 :root {
-  --color-primary-menu: #24406b;       /* Azul escuro */
-  --color-secondary-menu: #213658;    /* Azul mais escuro */
-  --color-text: white;           /* Texto branco */
-  --color-background: #f3f4f6;   /* Fundo cinza claro */
-  --color-shadow: rgba(0, 0, 0, 0.1); /* Sombra */
+  --color-primary-menu: #24406b;    
+  --color-secondary-menu: #213658;  
+  --color-hover-menu: #1c2e4a;
+  --color-text: white;          
+  --color-background: #f3f4f6;   
+  --color-shadow: rgba(0, 0, 0, 0.1); 
 }
+
+/* :root { -- TESTE DE ROOT (PREFERIDO) --
+  --color-primary-menu: #003E6D;     
+  --color-secondary-menu: #002A4D;    
+  --color-hover-menu: #05233b;
+  --color-text: white;          
+  --color-background: #f3f4f6;  
+  --color-shadow: rgba(0, 0, 0, 0.1);
+} */
 
 body {
   margin: 0;
@@ -81,9 +91,11 @@ body {
 
 .menu-item:hover,
 .menu-item:focus {
-  background-color: var(--color-secondary);
+  background-color: var(--color-hover-menu);
   border-left: 4px solid var(--color-text);
   outline: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .menu-item.active {

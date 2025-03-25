@@ -8,12 +8,9 @@ import {
   faRocket,
   faSackDollar,
   faUpload,
-  faUsers,
   faWarehouse,
   faHardHat,
-  faSatelliteDish,
   faBell,
-  faHeadset,
   faFileSignature,
 } from '@fortawesome/free-solid-svg-icons';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
