@@ -276,7 +276,7 @@ function CadastroCliente({ onVoltar }) {
         </button>
       </form>
 
-      <h2 className="subtitle">Clientes Cadastrados</h2>
+      <h1 className="title">Clientes Cadastrados</h1>
 
       {/* Filtros */}
       <div className="filtros-container">

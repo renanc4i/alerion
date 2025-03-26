@@ -1,20 +1,12 @@
-:root {
-  --color-primary-menu: #24406b;    
-  --color-secondary-menu: #213658;  
-  --color-hover-menu: #1c2e4a;
-  --color-text: white;          
-  --color-background: #f3f4f6;   
-  --color-shadow: rgba(0, 0, 0, 0.1); 
-}
 
-/* :root { -- TESTE DE ROOT (PREFERIDO) --
+:root {
   --color-primary-menu: #003E6D;     
   --color-secondary-menu: #002A4D;    
   --color-hover-menu: #05233b;
   --color-text: white;          
   --color-background: #f3f4f6;  
   --color-shadow: rgba(0, 0, 0, 0.1);
-} */
+}
 
 body {
   margin: 0;

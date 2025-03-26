@@ -9,7 +9,6 @@
   --error-color: #ff0000;
 }
 
-/* Container Principal */
 .cadastro-container {
   padding: 40px;
   background-color: var(--background-color);
@@ -18,7 +17,6 @@
   color: var(--text-color);
 }
 
-/* Cabeçalho */
 .header-container {
   display: flex;
   flex-direction: column;
@@ -45,25 +43,14 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Títulos */
-.title,
-.subtitle {
+.title {
   font-size: 2.0rem;
   font-weight: 600;
   color: var(--primary-color);
   text-align: left;
-}
-
-.title {
   margin-top: 20px;
 }
 
-.subtitle {
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
-/* Formulário */
 .form-container {
   display: flex;
   flex-direction: column;
@@ -103,7 +90,6 @@
   color: var(--text-color);
 }
 
-/* Botão de Submissão */
 .submit-button {
   padding: 12px;
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -120,7 +106,6 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Filtros */
 .filtros-container {
   margin-bottom: 20px;
 }
@@ -149,7 +134,7 @@
 }
 
 .filtro-group {
-  flex: 1 1 200px; /* Cada grupo terá pelo menos 200px e se ajustará conforme o espaço disponível */
+  flex: 1 1 200px;
 }
 
 .filtro-group label {
@@ -167,7 +152,7 @@
   color: var(--text-color);
 }
 
-/* Cards */
+
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -199,7 +184,6 @@
   margin: 5px 0;
 }
 
-/* Ícones de Ação */
 .icon-buttons {
   display: flex;
   justify-content: center;
@@ -227,7 +211,6 @@
   color: var(--error-color);
 }
 
-/* Modal */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -267,7 +250,6 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .form-row {
     flex-direction: column;
