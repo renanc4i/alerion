@@ -211,7 +211,7 @@ function CadastroCliente({ onVoltar }) {
         </button>
       </div>
 
-      <h1 className="title">Cadastro de Clientes</h1>
+      <h1 className="title-cli">Cadastro de Clientes</h1>
 
       <form onSubmit={handleSubmit} className="form-container">
         {/* Primeira linha */}
@@ -276,8 +276,7 @@ function CadastroCliente({ onVoltar }) {
         </button>
       </form>
 
-      <h1 className="title">Clientes Cadastrados</h1>
-
+      <h1 className="title-cli">Clientes Cadastrados</h1>
       {/* Filtros */}
       <div className="filtros-container">
         <button className="filtro-toggle-button" onClick={() => setShowFiltros(!showFiltros)}>
