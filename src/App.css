@@ -21,7 +21,6 @@ body {
   overflow: hidden;
 }
 
-/* Sidebar */
 .sidebar {
   position: fixed;
   top: 0;
@@ -104,7 +103,6 @@ body {
   font-size: 16px;
 }
 
-/* Conteúdo principal */
 .content {
   flex: 1;
   padding: 30px;
